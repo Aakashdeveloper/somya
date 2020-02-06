@@ -1,0 +1,23 @@
+Rxjs
+Ngrx
+Login/Logout(Consume of JWT Api)
+Interceptors
+Router
+Testing
+
+
+7 10pm ist 
+8,9  6am
+10  10pm
+11,12,13,14 7am
+
+
+Login/Logout Api
+
+Register
+> http://localhost:5000/api/auth/register
+> Payload {"name":"Ammy", "email":"ammy@gmail.com","password":"12345678", "role":"Admin"}
+> Response {
+    "auth": true,
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6I"
+}
