@@ -21,3 +21,9 @@ Register
     "auth": true,
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6I"
 }
+
+
+module => NgModule
+component => component
+pipe => pipe pipetransform
+service => iinjectable

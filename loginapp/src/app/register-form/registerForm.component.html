@@ -1,0 +1,32 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        User Form
+    </div>
+    <div class="panel-body">
+        <form #form="ngForm" (submit)="submitForm(form)">
+            <div class="form-group">
+                <label>FistName</label>
+                <input type="text"
+                    class="form-control"
+                    name="fname"
+                    id="fname"
+                    [(ngModel)] ="myUser.fname"   
+                    required                                                                                                                
+                    #fnames/>
+            </div>
+           <h2>{{fnames.className}}</h2>
+
+            <div class="form-group">
+                <label>LastName</label>
+                <input type="text"
+                    class="form-control"
+                    name="lname"
+                    id="lname"/>
+            </div>
+            <button  class="btn btn-info">
+                Submit
+            </button>
+    
+        </form>
+    </div>
+</div>
