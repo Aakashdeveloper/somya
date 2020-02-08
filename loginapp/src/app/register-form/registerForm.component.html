@@ -8,20 +8,30 @@
                 <label>FistName</label>
                 <input type="text"
                     class="form-control"
-                    name="fname"
+                    name="name"
                     id="fname"
-                    [(ngModel)] ="myUser.fname"   
+                    (ngModelChange)="firstToUpper($event)"
+                    [ngModel]="myUser.name"   
                     required                                                                                                                
                     #fnames/>
             </div>
            <h2>{{fnames.className}}</h2>
 
             <div class="form-group">
-                <label>LastName</label>
+                <label>Email</label>
                 <input type="text"
                     class="form-control"
-                    name="lname"
+                    name="email"
+                    [(ngModel)] ="myUser.email"   
                     id="lname"/>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="text"
+                    class="form-control"
+                    name="password"
+                    [(ngModel)] ="myUser.password"   
+                    id="password"/>
             </div>
             <button  class="btn btn-info">
                 Submit

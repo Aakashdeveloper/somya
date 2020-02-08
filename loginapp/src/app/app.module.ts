@@ -8,6 +8,8 @@ import { LoginComponent } from './login-form/loginForm.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
+import {HttpClientModule} from '@angular/common/http';
+import { RegisterService } from './register-form/registerForm.service';
 
 @NgModule({
   declarations: [
@@ -20,9 +22,12 @@ import { ProfileComponent } from './profile/profile.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    RegisterService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

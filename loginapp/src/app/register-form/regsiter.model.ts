@@ -1,6 +1,7 @@
 export class IRegister  {
     constructor(
-        public fname: string,
-        public lname: string
+        public name: string,
+        public email: string,
+        public password: string
     ) {}
 }
