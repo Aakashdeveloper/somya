@@ -1,0 +1,29 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        User Form
+    </div>
+    <div class="panel-body">
+        <form #form="ngForm" (submit)="submitForm(form)">
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text"
+                    class="form-control"
+                    name="email"
+                    [(ngModel)] ="myUser.email"   
+                    id="lname"/>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="text"
+                    class="form-control"
+                    name="password"
+                    [(ngModel)] ="myUser.password"   
+                    id="password"/>
+            </div>
+            <button  class="btn btn-info">
+                Submit
+            </button>
+    
+        </form>
+    </div>
+</div>

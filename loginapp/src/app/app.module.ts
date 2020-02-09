@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
 import {HttpClientModule} from '@angular/common/http';
 import { RegisterService } from './register-form/registerForm.service';
+import { LoginService } from './login-form/login.service';
+import { ProfileService } from './profile/profile.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { RegisterService } from './register-form/registerForm.service';
     HttpClientModule
   ],
   providers: [
-    RegisterService
+    RegisterService,
+    LoginService,
+    ProfileService
   ],
   bootstrap: [AppComponent]
 })
