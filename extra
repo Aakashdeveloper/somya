@@ -1,5 +1,8 @@
 Rxjs
-Ngrx
+async pipe
+
+Ngrx/Kindo
+
 //Login/Logout(Consume of JWT Api)
 Interceptors
 //Router
