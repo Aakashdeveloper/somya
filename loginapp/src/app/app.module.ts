@@ -14,7 +14,11 @@ import { LoginService } from './login-form/login.service';
 import { ProfileService } from './profile/profile.service';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NorthwindService } from './profile/kendo.serrvice';
+import { ButtonsModule } from '@progress/kendo-angular-buttons';
+import { KendoComponent } from './kendo/kendo.component';
+import { ChartsModule } from '@progress/kendo-angular-charts';
+import 'hammerjs';
+
 
 
 
@@ -24,7 +28,8 @@ import { NorthwindService } from './profile/kendo.serrvice';
     AdminFormComponent,
     RegisterFormComponent,
     LoginComponent,
-    ProfileComponent
+    ProfileComponent,
+    KendoComponent
   ],
   imports: [
     BrowserModule,
@@ -32,13 +37,14 @@ import { NorthwindService } from './profile/kendo.serrvice';
     FormsModule,
     HttpClientModule,
     GridModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ButtonsModule,
+    ChartsModule
   ],
   providers: [
     RegisterService,
     LoginService,
     ProfileService,
-    NorthwindService
   ],
   bootstrap: [AppComponent]
 })
