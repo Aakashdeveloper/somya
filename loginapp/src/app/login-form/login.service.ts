@@ -10,11 +10,19 @@ export class LoginService {
 
     constructor(private http: HttpClient) {}
 
-    LoginUser(user) : Observable<any[]> {
+    LoginUser(user): Observable<any[]> {
         return this.http.post<any[]>(this.url, user );
     }
 
-    getUserInfo(token): Observable<any[]>{
+    /*
+       getProducts():Observable<IProduct[]>{
+        return this._http.get(this._productUrl)
+            .map((response:Response) => response.json())
+            .catch(this.handleError)
+    }
+    */
+
+    getUserInfo(token): Observable<any[]> {
         localStorage.setItem('TOKEN_NUMBER', token)
         return this.http.get<any[]>(this.userinfo, {headers:{'x-access-token':token}})
     }

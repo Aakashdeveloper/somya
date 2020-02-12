@@ -1,5 +1,14 @@
 Rxjs
-async pipe
+asyncpipe
+filter
+subject
+switchMap
+MapMerge
+debouncetime
+BehaviorSubject
+Subscriber
+observable
+
 
 Ngrx/Kindo
 
@@ -7,6 +16,9 @@ Ngrx/Kindo
 Interceptors
 //Router
 Testing
+
+asyncpipe
+
 
 
 7 10pm ist 

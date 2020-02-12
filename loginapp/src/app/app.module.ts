@@ -12,6 +12,11 @@ import {HttpClientModule} from '@angular/common/http';
 import { RegisterService } from './register-form/registerForm.service';
 import { LoginService } from './login-form/login.service';
 import { ProfileService } from './profile/profile.service';
+import { GridModule } from '@progress/kendo-angular-grid';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NorthwindService } from './profile/kendo.serrvice';
+
+
 
 @NgModule({
   declarations: [
@@ -25,12 +30,15 @@ import { ProfileService } from './profile/profile.service';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    GridModule,
+    BrowserAnimationsModule
   ],
   providers: [
     RegisterService,
     LoginService,
-    ProfileService
+    ProfileService,
+    NorthwindService
   ],
   bootstrap: [AppComponent]
 })
