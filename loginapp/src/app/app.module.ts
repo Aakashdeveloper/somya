@@ -17,7 +17,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { KendoComponent } from './kendo/kendo.component';
 import { ChartsModule } from '@progress/kendo-angular-charts';
+import { IntlModule } from '@progress/kendo-angular-intl';
+import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import 'hammerjs';
+
 
 
 
@@ -39,7 +42,9 @@ import 'hammerjs';
     GridModule,
     BrowserAnimationsModule,
     ButtonsModule,
-    ChartsModule
+    ChartsModule,
+    IntlModule,
+    DateInputsModule
   ],
   providers: [
     RegisterService,
